@@ -76,7 +76,7 @@ class CustomPostType
     {
         $this->labels = array(
             "name"                => _x("$this->name", "Post Type General Name"),
-            "singular_name"       => _x("$this->name", "Post Type Singular Name"),
+            "singular_name"       => _x(rtrim($this->name, "s"), "Post Type Singular Name"),
             "menu_name"           => __("$this->name"),
             "parent_item_colon"   => __("Parent $this->name"),
             "all_items"           => __("All Items"),
